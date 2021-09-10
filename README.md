@@ -1,5 +1,5 @@
 # b3d-Generative
-Daily Coding with Blender Python API (bpy)
+Visual Coding with Blender Python API (bpy)
 
 [![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
 
@@ -27,7 +27,9 @@ Daily Coding with Blender Python API (bpy)
 
 ### Work 1
 
+## VERSION
 
+Blender 2.83.3 (work1 - work7)
 
 ## LICENSE
 
