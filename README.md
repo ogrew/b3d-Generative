@@ -27,6 +27,7 @@ Visual Coding with Blender Python API (bpy)
 
 ### Work 2
 
+![work2](https://user-images.githubusercontent.com/21966381/132950057-f5fafded-7724-4822-aa7c-be9afbd5522a.jpg)
 
 ### Work 1
 
