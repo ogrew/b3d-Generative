@@ -95,7 +95,7 @@ Visual Coding with Blender Python API (bpy)
 
 ## VERSION
 
-Blender 2.83.3 (work1 - work15)
+Blender 2.83.3 (work1 - work22)
 
 ## LICENSE
 
