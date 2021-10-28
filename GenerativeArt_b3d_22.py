@@ -56,24 +56,6 @@ def ApplySubSurfModifier(me) :
     sub.levels = 4
     sub.render_levels = 5
     sub.quality = 4
-    
-def AddTorus(loc, size) :
-   
-    # rx = math.atan2(vec2[2] - vec1[2], vec2[1] - vec1[1])
-    # ry = math.atan2(vec2[0] - vec1[0], vec2[2] - vec1[2])
-    # rz = math.atan2(vec2[1] - vec1[1], vec2[0] - vec1[0])
-   
-    bpy.ops.mesh.primitive_torus_add(
-        major_segments = 48,
-        minor_segments = 12,
-        major_radius = size,
-        minor_radius = 0.2,
-        abso_major_rad = 1.25,
-        abso_minor_rad = 0.75,
-        align = 'WORLD',
-        location = (loc[0], loc[1], loc[2]),
-        rotation = (0, 0, 0)
-    )
 
 def AddSphere(vec, size, mat) :
    
@@ -86,18 +68,15 @@ def AddSphere(vec, size, mat) :
     bpy.context.object.data.materials.append( mat )    
 
 def main() :
-    # DeleteObjects()
-    # DeleteMeshes()
+    DeleteObjects()
+    DeleteMeshes()
     DeleteMaterials()
     colors = GetColors()
     materials = MakeMaterials( colors )
 
-    u = np.linspace(0, 2*np.pi, num)
-       
+    u = np.linspace(0, 2*np.pi, num)   
     p = math.floor( random.uniform(6, 14) )
     q = math.floor( random.uniform(2, 7) )
-    p = 13
-    q = 2
     print("p, q = " + str(p) + "," + str(q))
     
     for i in range( 1 ) :
@@ -105,7 +84,6 @@ def main() :
         r2 = R2 / (i + 1)
         
         offset = math.pi if i % 2 == 0 else 0
-        
         nx = (r2 + r1*np.cos(p*u + offset)) * np.cos(q*u)
         ny = (r2 + r1*np.cos(p*u + offset)) * np.sin(q*u)
         nz = r1 * np.sin(p*u)
