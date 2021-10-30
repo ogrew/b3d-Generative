@@ -5,6 +5,10 @@ Visual Coding with Blender Python API (bpy)
 
 ## Gallery
 
+### Work23
+
+![work23](https://user-images.githubusercontent.com/21966381/139516781-053c5249-6571-4eff-bb09-5c6bd09f5992.png)
+
 ### Work22
 
 ![work22](https://user-images.githubusercontent.com/21966381/139249044-b86106f7-3ff4-4f6a-a3e7-72aef9767f65.png)
